@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [solutin link](https://github.com/Tonny-Blair-Daniel/NewsletterSignUp.git)
-- Live Site URL: [the site](https://your-live-site-url.com)
+- Live Site URL: [the site](https://tonny-blair-daniel.github.io/NewsletterSignUp/)
 
 ## My process
 
