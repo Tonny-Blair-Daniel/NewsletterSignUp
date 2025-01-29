@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solutin link](https://your-solution-url.com)
+- Solution URL: [solutin link](https://github.com/Tonny-Blair-Daniel/NewsletterSignUp.git)
 - Live Site URL: [the site](https://your-live-site-url.com)
 
 ## My process
