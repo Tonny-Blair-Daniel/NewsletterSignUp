@@ -17,14 +17,11 @@ body{
     width: 375px;
     min-width: 320px;  
     background-color: hsl(0, 0%, 100%);
-    height: inherit;
-}
-.first img{
-    height: 20%
+    display: flex;
+    flex-direction: column;
 }
 .second{
     height: 60%;
-    position: relative;
     padding: 0em 2em 0 2em;
 }
 h1,p,ul{
@@ -63,8 +60,6 @@ button{
     font-weight: 700;
 }
 .success{
-    position: absolute;
-    bottom: 0em;
     height: 100%;
     background-color: hsl(0 , 0%, 100%);
     display: flex;
@@ -108,8 +103,9 @@ button{
 
     }
     .success{
-        bottom: 4em;
-        left: 10em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 300px;
         height: 300px;
         border-radius: 30px;
