@@ -1,23 +1,24 @@
 'use strict';
 
-document.getElementById("submit-btn").addEventListener("click", function(event){
-    event.preventDefault(); 
-    let emailAddress = document.getElementById("email").value;
-    const confirmation = document.querySelector(".success");
-    if (confirmation.style.display === "none") {
+const form = document.querySelector("form");
+const dismissBtn = document.querySelector(".dismiss-btn");
+const confirmation = document.querySelector(".success");
+const emailAddress = document.getElementById("email").value;
+const email2 = document.getElementById("email2");
+const container = document.querySelector(".container");
+
+form.addEventListener('submit', (event) =>{
+    event.preventDefault();
+    if (email.validity.valid){
         confirmation.style.display = "flex";
-        document.getElementById("email2").innerHTML = emailAddress;
-        document.querySelector(".container").style.backgroundColor = "hsl(234, 29%, 20%)";
-        document.querySelector(".first").style.display = "none";
-        document.querySelector(".second").style.display = "none"; 
+        email2.innerHTML = emailAddress;
+        container.style.display = "none"; 
     }
 });
-    
-document.querySelector(".dismiss-btn").addEventListener("click", function(){
-    document.querySelector(".success").style.display = "none";
-    document.querySelector(".container").style.backgroundColor = "hsl(0 , 0%, 100%)";
-    document.querySelector(".first").style.display = "flex";
-    document.querySelector(".second").style.display = "flex";   
+            
+dismissBtn.addEventListener("click", function(){
+confirmation.style.display = "none";
+container.style.display = "flex"; 
 });
 
 
